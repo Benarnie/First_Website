@@ -1,0 +1,148 @@
+/*beginning of SCSS translation*/ 
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+body .container section:nth-of-type(1) {
+  background-color: #fcf5e5;
+}
+
+body .container section:nth-of-type(2) {
+  background-color: #fcf5e5;
+  color: blue;
+}
+
+body .container section:nth-of-type(3) {
+  background-color: #fcf5e5;
+  color: yellow;
+}
+
+body .container section h1 {
+  position: relative;
+}
+
+/*end of SCSS translation*/ 
+
+/*first section*/
+
+.sectionOne {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono', monospace;
+  scroll-behavior: smooth;
+}
+
+.pg1heading {
+  display: flex;
+  font-size: 75px;
+  justify-content: center;
+}
+
+/*h1*/ .pg1intro {
+  font-weight: 470;
+	margin-top: 25px;
+	margin-bottom: 25px;
+  position: relative;
+}
+
+.pg1intro::before,
+.pg1intro::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pg1intro::before {
+  background: #fcf5e5;
+  animation: typewriter 2s steps(8) 1s forwards;
+}
+
+.pg1intro::after {
+  width: .080em;
+  background: black;
+  animation: typewriter 2s steps(8) 1s forwards, blink 250ms steps(8) infinite;
+}
+
+@keyframes typewriter {
+  to { 
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.pg1subheading {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 300px; 
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 3.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollDown {
+	width: 75px;
+	height: 75px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.section1 {
+}
+
+.section2 {
+}
+
+.section3 {
+
+}
+
